@@ -1,5 +1,4 @@
 import urllib
-import urllib2
 import requests
 import json
 
@@ -15,7 +14,7 @@ def send_sms_notification(number, text):
         'text': text
     }
     url = 'https://rest.nexmo.com/sms/json?' + urllib.urlencode(params)
-    req = urllib2.Request(url)
+    req = urllib.Request(url)
     req.add_header('Accept', 'application/json')
     res = urllib2.urlopen(req)
     if res.code == 200:
