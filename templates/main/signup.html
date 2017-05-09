@@ -1,0 +1,109 @@
+{% extends 'base.html' %}
+{% load static %}
+}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/logo-nav.css' %}" />
+{% endblock %}
+
+
+{% block body %}
+{% include 'main/partials/navbar.html' %}
+<div class="container">
+<!-- Contact Form -->
+<!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+<div class="row">
+    <div class="col-md-12">
+        <div class="well" style="margin-top: 50px">
+            <h3>Sign Up</h3>
+        </div>
+        <form id="merchantForm" action="" method="POST">
+            {% csrf_token %}
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="form-group">
+                        <label for="nameTwo" >Company</label>
+                        {{ form.company }}
+                    </div>
+                     <div class="form-group">
+                         <label for="nameTwo" >Salutation</label>
+                        {{ form.salutation }}
+                    </div>
+                    <div class="form-group">
+                        <label for="nameTwo" >First Name</label>
+                        {{ form.f_name }}
+                    </div>
+                    <div class="form-group">
+                        <label for="nameTwo" >Last Name</label>
+                        {{ form.l_name }}
+                    </div>
+                    <div class="form-group">
+                        <label for="emailTwo" >Email</label>
+                        {{ form.email }}
+                    </div>
+                    <div class="form-group">
+                        <label for="emailTwo" >Mobile</label>
+                        {{ form.mobile }}
+                    </div>
+                    <div class="form-group">
+                        <label for="emailTwo" >Website</label>
+                        {{ form.website }}
+                    </div>
+                </div> <!-- col-md-4 -->
+
+                <div class="col-md-8">
+                    <div class="form-group">
+                        <label for="messageTwo" >Street</label>
+                        {{ form.street }}
+                    </div>
+                    <div class="form-group">
+                        <label for="messageTwo" >State</label>
+                        {{ form.state}}
+                    </div>
+                    <div class="form-group">
+                        <label for="messageTwo" >Zip Code</label>
+                        {{ form.zip_code }}
+                    </div>
+                    <div class="form-group">
+                        <label for="messageTwo" >City</label>
+                        {{ form.city }}
+                    </div>
+                    <div class="form-group">
+                        <label for="emailTwo" >Industry</label>
+                        {{ form.industry }}
+                    </div>
+                    <div class="form-group">
+                        <label for="messageTwo" >Monthly Sales (MYR)</label>
+                        {{ form.salay }}
+                    </div>
+                    <div class="form-group">
+                        <label for="messageTwo" >Description</label>
+                        {{ form.description }}
+                    </div>
+                    <div class="form-group">
+                        <label for="messageTwo" >Bank Reference</label>
+                        {{ form.bank }}
+                    </div>
+                    <div class="form-group">
+                        <label for="messageTwo" >Lead Source</label>
+                        {{ form.lead_source }}
+                    </div>
+                    <div class="form-group">
+                        <label for="messageTwo" >Method of Contact</label>
+                        {{ form.contact_method }}
+                    </div>
+                </div> <!-- col-md-8 -->
+            </div><!-- /.row-->
+            <button type="submit" class="btn btn-primary btn-lg pull-right">Submit</button>
+        </form>
+    </div>
+</div>
+<!-- /.row -->
+</div>
+<hr>
+
+{% include 'main/partials/footer.html' %}
+{% endblock %}
+
+{% block js %}
+<script src="{% static 'js/utils.js' %}"></script>
+{% endblock %}

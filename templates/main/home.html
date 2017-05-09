@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/logo-nav.css' %}" />
+
+<link rel="stylesheet" href="{% static 'css/header.css' %}" />
+{% endblock %}
+
+
+{% block body %}
+{% include 'main/partials/navbar.html' %}
+
+{% include 'main/partials/header.html' %}
+<!-- Page Content -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-3">
+            <img width=70 class="img img-responsive img-center" src="{% static 'img/support.png' %}" alt="">
+            <h3>Constant Support</h3>
+            <p>We pride in the success of your venture that why our team looks forward to provide maximum support and special loyalty offers.</p>
+        </div>
+        <div class="col-sm-3">
+            <img width=70 class="img img-responsive img-center" src="{% static 'img/options.png' %} " alt="">
+            <h3>Multiple Options</h3>
+            <p>Our Merchants can enjoy a variety of easy payment solutions from Billing to Mobile POS systems that cater to a diverse clientele.</p>
+        </div>
+        <div class="col-sm-3">
+            <img width=70 class="img img-responsive img-center" src="{% static 'img/secure.png' %}" alt="">
+            <h3>Security Guarenteed</h3>
+            <p>Our secure payment gateway seamlessly processes each and every transaction you make.</p>
+        </div>
+        <div class="col-sm-3">
+            <img width=70 class="img img-responsive img-center" src="{% static 'img/gaurantee.png' %}" alt="">
+            <h3>Easy Payment</h3>
+            <p>A simple, hasslefree, comprehensive solution tailored to your specific needs that can be installed anywhere.</p>
+        </div>
+
+    </div>
+</div>
+    <hr />
+    <!-- Call to Action Section -->
+<div class="container">
+    <div class="well">
+        <div class="row">
+            <div class="col-md-8">
+                <h4>Signup now to increase your sales with easy and secure payment solutions</h4>
+            </div>
+            <div class="col-md-4">
+                <a class="btn btn-lg btn-danger btn-block" href="#">Signup</a>
+            </div>
+        </div>
+    </div>
+</div>
+<hr />
+{% include 'main/partials/footer.html' %}
+{% endblock %}

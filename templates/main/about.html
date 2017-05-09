@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+{% load static %}
+}
+{% block css %}
+<link rel="stylesheet" href="{% static 'css/logo-nav.css' %}" />
+{% endblock %}
+
+
+{% block body %}
+{% include 'main/partials/navbar.html' %}
+
+<!-- Page Content -->
+<div class="container">
+
+    <!-- Page Heading/Breadcrumbs -->
+    <div class="row">
+        <div class="col-lg-12">
+            <h1 class="page-header">About us
+            </h1>
+        </div>
+    </div>
+
+    <!-- First Featurette -->
+    <div class="featurette" id="about">
+        <img width=500 class="featurette-image img-circle img-responsive pull-right" src="{% static 'img/about.jpeg' %}">
+        <h2 class="featurette-heading">Who are we?
+            <span class="text-muted">The Merchant Affilaite</span>
+        </h2>
+        <p class="lead">We pride ourselves on long term partnerships backed by strong business
+        ethics and absolute accountability to our clients. We emphasize on providing you with the
+        best solution tailored to the needs of the industry that you are in.</p>
+        <p class="lead">As the payment landscape is ever constantly growing and evolving, we do
+        things differently by working closely and openly with our clients to enable business
+        continuity whilst safeguarding your revenue streams.</p>
+        <p class="lead"> Our years of expertise in the payment processing industry is backed by an
+        extensive local network in Malaysia, strong business acumen, innovative spirit and industry
+        foresight. </p>
+        <hr />
+        <p class="lead">Sign up today, and find out why more and more merchants work with the Merchant Affiliate team with continued confidence and trust!</p>
+    </div>
+
+    <hr />
+</div>
+{% include 'main/partials/footer.html' %}
+{% endblock %}
