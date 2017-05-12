@@ -31,7 +31,7 @@
             <p>Our secure payment gateway seamlessly processes each and every transaction you make.</p>
         </div>
         <div class="col-sm-3">
-            <img width=70 class="img img-responsive img-center" src="{% static 'img/gaurantee.png' %}" alt="">
+            <img width=60 class="img img-responsive img-center" src="{% static 'img/gaurantee.png' %}" alt="">
             <h3>Easy Payment</h3>
             <p>A simple, hasslefree, comprehensive solution tailored to your specific needs that can be installed anywhere.</p>
         </div>
@@ -47,10 +47,11 @@
                 <h4>Signup now to increase your sales with easy and secure payment solutions</h4>
             </div>
             <div class="col-md-4">
-                <a class="btn btn-lg btn-danger btn-block" href="#">Signup</a>
+                <a class="btn btn-lg btn-danger btn-block" href="{% url 'signup' %}">Signup</a>
             </div>
         </div>
     </div>
+            {% include 'main/partials/partners.html' %}
 </div>
 <hr />
 {% include 'main/partials/footer.html' %}

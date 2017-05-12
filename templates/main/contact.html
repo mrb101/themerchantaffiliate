@@ -3,24 +3,25 @@
 }
 {% block css %}
 <link rel="stylesheet" href="{% static 'css/logo-nav.css' %}" />
+<link rel="stylesheet" href="{% static 'css/header.css' %}" />
 {% endblock %}
 
 
 {% block body %}
 {% include 'main/partials/navbar.html' %}
+
+
+<header class="business-header" style="height: 89px">
+    <div class="container">
+        <h1 class="page-header text-center" style="color: #eee">Contact Us</h1>
+    </div>
+</header>
+
+
 <div class="container">
 <!-- Contact Form -->
 <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
 <div class="row">
-    <div class="col-md-12">
-    <!-- Page Heading/Breadcrumbs -->
-    <div class="row">
-        <div class="col-lg-12">
-            <h1 class="page-header">Contact Us
-            </h1>
-        </div>
-    </div>
-
     <form id="inquiry" action="" method="POST">
         {% csrf_token %}
         <div class="control-group form-group">

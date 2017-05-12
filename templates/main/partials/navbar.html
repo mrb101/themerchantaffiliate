@@ -11,12 +11,15 @@
                 <span class="icon-bar"></span>
             </button>
             <a class="navbar-brand" href="{% url 'home' %}">
-                <img width=100 src="{% static 'img/tma_logo.png' %}" alt="">
+                <img width=180 src="{% static 'img/tma_logo.png' %}" alt="">
             </a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
+            <ul class="nav navbar-nav pull-right">
+                <li>
+                    <a href="{% url 'home' %}">Home</a>
+                </li>
                 <li>
                     <a href="{% url 'services' %}">Services</a>
                 </li>
@@ -29,9 +32,7 @@
                  <li>
                      <a href="{% url 'contact' %}">Contact</a>
                 </li>
-            </ul>
-            <ul class="nav navbar-nav navbar-right">
-                <li style="background-color: #d81936"><a href="#" style="color: white;">Sign Up</a> </li>
+                <li><a href="{% url 'signup' %}">Merchant Login <i class="fa fa-user" aria-hidden="true"></i></a></li>
             </ul>
         </div>
         <!-- /.navbar-collapse -->

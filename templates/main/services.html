@@ -3,23 +3,22 @@
 }
 {% block css %}
 <link rel="stylesheet" href="{% static 'css/logo-nav.css' %}" />
+<link rel="stylesheet" href="{% static 'css/header.css' %}" />
 {% endblock %}
 
 {% block body %}
 {% include 'main/partials/navbar.html' %}
 
+
+<header class="business-header" style="height: 89px">
+    <div class="container">
+        <h1 class="page-header text-center" style="color: #eee">Services</h1>
+    </div>
+</header>
+
+
 <!-- Page Content -->
 <div class="container">
-
-
-<!-- Page Heading/Breadcrumbs -->
-<div class="row">
-    <div class="col-lg-12">
-        <h1 class="page-header">Services
-        </h1>
-    </div>
-</div>
-<!-- /.row -->
 
 <!-- Service Panels -->
         <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
@@ -35,7 +34,6 @@
             <div class="panel-body">
                 <h4>POS Terminal</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <a href="#" class="btn btn-primary">Learn More</a>
             </div>
         </div>
     </div>
@@ -50,7 +48,6 @@
             <div class="panel-body">
                 <h4>MPOS Terminal</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <a href="#" class="btn btn-primary">Learn More</a>
             </div>
         </div>
     </div>
@@ -65,7 +62,6 @@
             <div class="panel-body">
                 <h4>Payment Gateway</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <a href="#" class="btn btn-primary">Learn More</a>
             </div>
         </div>
     </div>
@@ -80,7 +76,6 @@
             <div class="panel-body">
                 <h4>Loyalty Solutions</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <a href="#" class="btn btn-primary">Learn More</a>
             </div>
         </div>
     </div>
@@ -95,7 +90,6 @@
             <div class="panel-body">
                 <h4>Affiliate Teller Merchant</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <a href="#" class="btn btn-primary">Learn More</a>
             </div>
         </div>
     </div>
@@ -110,7 +104,6 @@
             <div class="panel-body">
                 <h4>Prepaid Debit Card</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <a href="#" class="btn btn-primary">Learn More</a>
             </div>
         </div>
     </div>
@@ -125,7 +118,6 @@
             <div class="panel-body">
                 <h4>Bill Payment</h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                <a href="#" class="btn btn-primary">Learn More</a>
             </div>
         </div>
     </div>
